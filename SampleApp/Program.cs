@@ -69,7 +69,7 @@ namespace SampleApp
                 gfx.DrawString($"Item {i}", new XFont("Arial", 6)
                 , XBrushes.Black
                 , new XPoint(12, x1 - 2));
-                gfx.DrawLine(XPens.Black, 0, x1 , 250, x1);
+                gfx.DrawLine(XPens.Black, 0, x1 , 550, x1);
                 x1 += 12;
             }
             EndBox(gfx);
@@ -106,7 +106,7 @@ namespace SampleApp
             BorderPen = new XPen(XColor.FromArgb(94, 118, 151), BorderWidth);
 
             const int dEllipse = 15;
-            var rect = new XRect(0, 20, 300, 200);
+            var rect = new XRect(0, 20, 595, 200);
             if (number % 2 == 0)
                 rect.X = 300 - 5;
             rect.Y = 40 + ((number - 1) / 2) * (200 - 5);
